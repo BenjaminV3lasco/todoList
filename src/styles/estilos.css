@@ -1,0 +1,59 @@
+
+.h2{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.add_task{
+    max-width: 300px;
+    margin: 0 auto; 
+}
+
+.formulario{
+   margin-left: 420px;
+   height: 30px;
+   display: flex;
+}
+
+
+.contenedor_tarea{
+   margin: 0 auto;
+   font-size: 25px;
+   text-align: center;
+   margin-left: 460px;
+   margin-top: 10px;
+   border: solid 1px black;
+   width: 440px;
+   height: 30px;
+   display: block;
+}
+
+.estilo_papelera{
+   margin-left: 383px;
+   margin-top:-30px;
+   height: 30px;
+   display: block;
+}
+
+.btn{
+   margin-left:14px;
+   width: 80px;
+   height: 35px;
+   display: flex;
+}
+
+.form{
+   margin-left: 0px;
+   width: 340px;
+   height: 30px;
+   display: flex;
+}
+
+
+.estilo_boton{
+    margin-left: 5px;
+    margin-top:-20px;
+    width: 15px;
+    height: 17px;
+    display: block;
+ }
