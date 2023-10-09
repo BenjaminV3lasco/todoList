@@ -1,10 +1,8 @@
-import { useState } from 'react';
+
 import {FaTrashAlt} from 'react-icons/fa'
 
 function Task (props) {
   const {task,onBorrarTarea} = props;
-  const [taskComplete, setTaskComplete] = useState(false)
-
     return(
         <>
           <div className="contenedor_tarea" id={task.id}>
@@ -18,9 +16,7 @@ function Task (props) {
             </span>
             <span>
               {/*Boton marcar tarea*/}
-              <button className="estilo_boton"
-                onClick={()=>setTaskComplete(taskComplete)}>
-              </button>
+              <input type="checkbox" className='estilo_boton' />
             </span>
           </div>
 

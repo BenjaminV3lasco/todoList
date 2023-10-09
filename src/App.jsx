@@ -26,10 +26,7 @@ function App() {
 
    const temp = [newTask, ...taskList]
    setTaskList(temp)
-
    setTask('')
-
-  
   }
 
   function handleChange(e){
@@ -42,13 +39,7 @@ function App() {
     setTaskList(temp)
   }
 
-  const marcarTarea = id =>{
-    const newTask = [...taskList]
-    let Task = newTask.find[(task)=> task.id ===id]
-    task.isComplete = ! task.isComplete
-    setTaskList(newTask)
-  }
-    
+ 
 
   return (
     <>
@@ -62,16 +53,16 @@ function App() {
         handleChange={handleChange}
     />
     </ul>
-     
           <div>
           {
+        
         taskList.map(task =>(
           <Task
           key={task.id}
           id={task.id}
           task={task}
           onBorrarTarea = {onBorrarTarea}
-          marcarTarea = {marcarTarea}
+          
           />
         ))
         }
