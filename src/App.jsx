@@ -3,7 +3,7 @@ import AddTask from './components/AddTask'
 import './styles/estilos.css'
 import Task from './components/Task'
 import { useState } from 'react'
-
+import Header from './components/AddHeader'
 
 function App() {
   
@@ -42,10 +42,8 @@ function App() {
  
 
   return (
-    <>
-        <div>
-          <h1 className='h2'>Lista de Tareas de Benjamin :)</h1>
-        </div>
+  <body className='container'>
+          <Header></Header>
         <ul>
     <AddTask
         task = {task}
@@ -55,7 +53,6 @@ function App() {
     </ul>
           <div>
           {
-        
         taskList.map(task =>(
           <Task
           key={task.id}
@@ -67,7 +64,8 @@ function App() {
         ))
         }
           </div>
-    </>
+  </body>
+    
   )
 }
 

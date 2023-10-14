@@ -7,17 +7,16 @@ function Task (props) {
         <>
           <div className="contenedor_tarea" id={task.id}>
             <span>{task.task}</span>
-              <span className='estilo_papelera'>
+              <span>
                 {/*Boton borrar tarea*/}
                 <button className="btn-delete"
                   onClick={()=>onBorrarTarea(task.id)}
-                  ><FaTrashAlt/>
+                  ><FaTrashAlt size='1.4rem' color='white'/>
                 </button>
             </span>
-            <span>
               {/*Boton marcar tarea*/}
-              <input type="checkbox" className='estilo_boton' />
-            </span>
+              <label for=""></label>
+              <input type="checkbox"/>
           </div>
 
         </>
